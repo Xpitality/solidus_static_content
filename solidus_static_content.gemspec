@@ -2,11 +2,11 @@ version = File.read(File.expand_path("../VERSION", __FILE__)).strip
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_static_content'
+  s.name        = 'solidus_static_content'
   s.version     = '1.0.0'
   s.summary     = 'Extention to manage the static pages for your Spree shop.'
   s.description = s.summary
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.3.0'
 
   s.authors      = [%q{Peter Berkenbosch}, %q{Roman Smirnov}]
   s.email        = 'peter@pero-ict.nl'

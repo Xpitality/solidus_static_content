@@ -6,3 +6,6 @@ spec/dummy/
 .rvmrc
 tmp
 coverage
+
+solidus_static_content.iml
+.idea
