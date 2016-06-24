@@ -1,16 +1,14 @@
-version = File.read(File.expand_path("../VERSION", __FILE__)).strip
-
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'solidus_static_content'
-  s.version     = '1.0.0'
+  s.version     = SolidusStaticContent::VERSION
   s.summary     = 'Extention to manage the static pages for your Spree shop.'
-  s.description = s.summary
+  s.description = 'Forked from https://github.com/gemento/solidus_static_content which itself is an adaptation of https://github.com/pero-ict-solutions/spree-static-content'
   s.required_ruby_version = '>= 2.3.0'
 
-  s.authors      = [%q{Peter Berkenbosch}, %q{Roman Smirnov}]
-  s.email        = 'peter@pero-ict.nl'
-  s.homepage     = 'http://spreecommerce.com/extensions/139-static-content'
+  s.authors      = [%q{Marko Bošković}]
+  s.email        = 'marko@xpitality.com'
+  s.homepage     = 'https://github.com/Xpitality/solidus_static_content'
   s.license      = %q{BSD-3}
 
   s.files        = `git ls-files`.split("\n")
