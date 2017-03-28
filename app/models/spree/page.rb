@@ -4,11 +4,6 @@ class Spree::Page < Spree::Base
 
   default_scope -> { order("position ASC") }
 
-  # solidus_globalize
-  translates :title, :slug, :body, :meta_title, :meta_description, :meta_keywords,
-             fallbacks_for_empty_translations: true
-  include SolidusGlobalize::Translatable
-
   has_and_belongs_to_many :stores, :join_table => 'spree_pages_stores'
 
   validates_presence_of :title
